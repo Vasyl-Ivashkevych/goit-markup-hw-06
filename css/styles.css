@@ -572,7 +572,7 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #2f303a;
+  background-color: #2f303a;
 }
 
 .position {
@@ -712,11 +712,56 @@ body {
 
 /* Form */
 
-/* .sign-up {
-  margin-bottom: 20px;
+.form {
+  margin-top: 20px;
+  
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+}
+
+.sign-up {
+  display: flex;
+  width: 207px;
+  height: 16px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--additional-color);
-} */
+}
+
+.form-mail {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.form-input {
+  width: 358px;
+  height: 50px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 47px;
+  height: 20px;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.footer-btn {
+  display: flex;
+}
