@@ -686,6 +686,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 0 40px;
   width: 528px;
   height: 581px;
   background-color: var(--additional-color);
@@ -710,36 +711,35 @@ body {
   cursor: pointer;
 }
 
-/* Form */
-
-.form {
-  margin-top: 20px;
-  
-}
-
-.container-form {
+.form-group {
   display: flex;
   flex-direction: column;
+}
+
+/* Form */
+
+.container-form {
   margin-left: 93px;
 }
 
-.sign-up {
+.form-with-btn {
   display: flex;
-  width: 207px;
-  height: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: inline-block;
+  margin-right: 0;
+}
+
+.sign-up {
+  margin: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--additional-color);
-}
-
-.form-mail {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
 }
 
 .form-input {
@@ -751,11 +751,10 @@ body {
 }
 
 .form-label {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 10%;
-  transform: translate(-50%, -50%);
-  display: flex;
+  transform: translate(-50%, -50%); */
   width: 47px;
   height: 20px;
   font-size: 16px;
@@ -764,4 +763,24 @@ body {
 
 .footer-btn {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  min-width: 200px;
+  min-height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--accent);
+  color: var(--additional-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.btn-icon {
+  margin-left: 10px;
+  /* margin-right: 28px; */
 }
