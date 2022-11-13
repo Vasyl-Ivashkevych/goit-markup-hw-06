@@ -171,11 +171,9 @@ body {
   padding-bottom: 200px;
   max-width: 1600px;
   height: 600px;
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
-      rgba(196, 196, 196, 0.1)
-    ),
+      rgba(196, 196, 196, 0.1)),
     url(../image/hero-Img.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -709,11 +707,72 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: 250ms var(--timing-function);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: var(--accent);
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-input:focus {
+  border: 1px solid var(--accent);
+}
+
+.modal-title {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--black-title);
+}
+
+.form-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.form-checkbox {
+  appearance: none;
+}
+
+.confidens-link {
+  color: var(--accent);
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--additional-color);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--accent);
+  transition: 250ms var(--timing-function);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Form */
@@ -724,13 +783,10 @@ body {
 
 .form-with-btn {
   display: flex;
+  gap: 12px;
   align-items: center;
   justify-content: center;
-}
-
-.form {
-  display: inline-block;
-  margin-right: 0;
+  margin-top: 20px;
 }
 
 .sign-up {
@@ -743,35 +799,32 @@ body {
 }
 
 .form-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
-  background-color: #2f303a;
+  padding-left: 16px;
+  background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
 
 .form-label {
-  /* position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translate(-50%, -50%); */
-  width: 47px;
-  height: 20px;
+  display: block;
+  width: 358px;
   font-size: 16px;
   line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 12px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  min-width: 200px;
-  min-height: 50px;
+  width: 200px;
+  height: 50px;
   cursor: pointer;
   border: none;
   background-color: var(--accent);
@@ -782,5 +835,4 @@ body {
 
 .btn-icon {
   margin-left: 10px;
-  /* margin-right: 28px; */
 }

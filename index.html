@@ -391,18 +391,17 @@
       <div class="container-form">
         <p class="sign-up">Підпишіться на розсилку</p>
         <div class="form-with-btn">
-          <form class="form">   
-              <label for="mail" class="form-label">
-                E-mail
-                <input type="email" class="form-input" name="mail" />
-              </label>
+          <form class="form">
+            <label name="mail" class="form-label">
+              <input type="email" class="form-input" name="mail" placeholder="Email" />
+            </label>
           </form>
           <button class="footer-btn" type="submit">Підписатися
             <svg class="btn-icon" width="24" height="24">
               <use href="./image/symbol-defs.svg#icon-send"></use>
             </svg>
           </button>
-        </div> 
+        </div>
       </div>
     </div>
   </footer>
@@ -415,7 +414,7 @@
       </button>
       <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
       <form class="modal-form">
-        <div class="form-group">
+        <div role="group" class="form-group">
           <label class="form-field">
             <input class="modal-input" type="text" name="">
             <span class="form-name">Ім'я</span>
@@ -439,13 +438,13 @@
           </label>
           <label class="form-field">
             <textarea class="form-comment" name="" rows="5" placeholder="Введіть текст"></textarea>
-            <span>Коментар</span>
+            <span class="form-name">Коментар</span>
           </label>
-          <label>
-            <input type="checkbox" name="">
-            <span>Погоджуюся з розсилкою та приймаю<a href="">Умови договору</a></span>
+          <label class="form-agreement">
+            <input class="form-checkbox" type="checkbox" name="agreement-checkbox">
+            <span class="form-confidens-text">Погоджуюся з розсилкою та приймаю<a class="confidens-link" href="">Умови договору</a></span>
           </label>
-          <button type="submit">Відправити</button>
+          <button class="form-btn" type="submit">Відправити</button>
         </div>
       </form>
     </div>
