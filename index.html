@@ -416,32 +416,42 @@
       <form class="modal-form">
         <div role="group" class="form-group">
           <label class="form-field">
-            <input class="modal-input" type="text" name="">
             <span class="form-name">Ім'я</span>
-            <svg class="form-icon" width="18" height="18">
-              <use href="./image/symbol-defs.svg#man-in-black"></use>
-            </svg>
+            <input class="modal-input" type="text" name="user-name">
+            <span class="form-thumb">
+              <svg class="form-icon" width="18" height="18">
+                <use href="./image/symbol-defs.svg#man-in-black"></use>
+              </svg>
+            </span> 
           </label>
           <label class="form-field">
-            <input class="modal-input" type="tel" name="">
             <span class="form-name">Телефон</span>
-            <svg class="form-icon" width="18" height="18">
-              <use href="./image/symbol-defs.svg#phone-black"></use>
-            </svg>
+            <input class="modal-input" type="tel" name="user-phone">
+            <span class="form-thumb">
+              <svg class="form-icon" width="18" height="18">
+                <use href="./image/symbol-defs.svg#phone-black"></use>
+              </svg>
+            </span>  
           </label>
           <label class="form-field">
-            <input class="modal-input" type="email" name="">
             <span class="form-name">Пошта</span>
-            <svg class="form-icon" width="18" height="18">
-              <use href="./image/symbol-defs.svg#email-black"></use>
-            </svg>
+            <input class="modal-input" type="email" name="user-email">
+            <span class="form-thumb">
+              <svg class="form-icon" width="18" height="18">
+                <use href="./image/symbol-defs.svg#email-black"></use>
+              </svg>
+            </span>  
           </label>
           <label class="form-field">
-            <textarea class="form-comment" name="" rows="5" placeholder="Введіть текст"></textarea>
+            <textarea class="form-comment" name="user-comment" rows="5" placeholder="Введіть текст"></textarea>
             <span class="form-name">Коментар</span>
           </label>
           <label class="form-agreement">
             <input class="form-checkbox" type="checkbox" name="agreement-checkbox">
+            <svg class="form-checkbox-icon" width="16" height="15">
+              <use class="unchecked" href="./image/symbol-defs.svg#icon-uncheck"></use>
+              <use class="checked" href="./image/symbol-defs.svg#icon-check"></use>
+            </svg>
             <span class="form-confidens-text">Погоджуюся з розсилкою та приймаю<a class="confidens-link" href="">Умови договору</a></span>
           </label>
           <button class="form-btn" type="submit">Відправити</button>
