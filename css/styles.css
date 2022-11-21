@@ -734,6 +734,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
+  transition: 250ms var(--timing-function);
 }
 
 .form-field:not(:last-child) {
@@ -744,47 +745,38 @@ body {
   position: absolute;
   top: 30%;
   left: 12px;
-  transition: 250ms var(--timing-function);
-}
-
-.form-field:focus-within .form-icon,
-.form-field:hover {
-  fill: var(--accent);
-  border-color: var(--accent);
 }
 
 .modal-input {
-  display: block;
   width: 448px;
   height: 40px;
   padding-left: 42px;
-  outline: transparent;
-  transition: 250ms var(--timing-function);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: unset;
 }
 
-.form-field:focus-within .modal-input,
-.form-field:hover {
+.modal-input:focus {
   border: 1px solid var(--accent);
   border-radius: 4px;
 }
 
+.modal-input:focus + .form-thumb {
+  fill: var(--accent);
+}
+
 .form-comment {
-  display: block;
   width: 448px;
   height: 120px;
   resize: none;
   color: var(--basic-text);
   padding: 12px 16px;
-  outline: transparent;
-  transition: 250ms var(--timing-function);
+  outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
-.form-field:focus-within .form-comment,
-.form-field:hover {
+.form-comment:focus {
   border: 1px solid var(--accent);
   border-radius: 4px;
 }
